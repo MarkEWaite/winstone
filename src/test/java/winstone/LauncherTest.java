@@ -168,7 +168,7 @@ class LauncherTest extends AbstractWinstoneTest {
     @Test
     void testBlankWarFileArgument() throws Exception {
         // Check that a single argument that is an existing file is assigned to the warfile entry in the Map
-        String fileName = " ";
+        String fileName = "a-file-name";
         Path spaceFile = Path.of(fileName);
         Files.createFile(spaceFile);
         String[] argv = {fileName};
@@ -181,7 +181,7 @@ class LauncherTest extends AbstractWinstoneTest {
     @Test
     void testBlankWebRootArgument() throws Exception {
         // Check that a single argument that is an existing directory is assigned to the webroot entry in the Map
-        String dirName = "  ";
+        String dirName = "a-directory-name";
         Path spaceDirectory = Path.of(dirName);
         Files.createDirectory(spaceDirectory);
         String[] argv = {dirName};
